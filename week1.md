@@ -1,5 +1,11 @@
 # Week 1 – System Planning and Distribution Selection
 
+**Student Name:** Mehedi Hasan Rakib  
+**Student ID:** A00022820  
+**Module:** CMPN202 – Operating Systems  
+
+
+
 ## System Architecture Diagram
 
 ![Week 1 System Architecture](images/week1_system_architecture.png)
