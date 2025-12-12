@@ -1,2 +1,5 @@
-# operating_system_journal
-Operating Systems coursework journal and demonstrations for CMPN202, documenting Linux server configuration, security hardening, and performance analysis.
+# CMPN202 – Operating Systems Coursework Journal
+
+## Weekly Journal
+- [Week 1 – System Planning and Distribution Selection](week1.html)
+- [Week 2 – Security Planning and Testing Methodology](week2.html)
