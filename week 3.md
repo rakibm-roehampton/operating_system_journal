@@ -25,13 +25,15 @@ This week focuses on selecting representative applications to evaluate operating
 
 All applications were installed on the Ubuntu Server using secure SSH access from the Windows workstation.
 
-### Update system packages
+## Update system packages
+
 ```bash
 sudo apt update
 sudo apt install stress-ng -y
 sudo apt install fio -y
 sudo apt install iperf3 -y
 sudo apt install nginx -y
+
 
 
 ## Expected Resource Usage Profiles
