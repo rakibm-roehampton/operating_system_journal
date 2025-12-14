@@ -4,92 +4,36 @@
 **Student ID:** A00022820  
 **Module:** CMPN202 – Operating Systems  
 
+---
 
 ## Introduction
 
-This week focuses on selecting representative applications to evaluate operating system performance under different workload types. The selected applications are designed to stress specific system resources such as CPU, memory, disk I/O, and network bandwidth. This structured approach ensures meaningful performance testing and prepares the system for detailed monitoring and optimisation in later weeks.
+This week focuses on selecting representative applications to evaluate operating system performance under different workload types. Each application is chosen to place stress on specific system resources such as CPU, memory, disk I/O, and network bandwidth. This structured selection ensures that performance testing in later weeks is meaningful, measurable, and aligned with real-world server workloads.
 
+---
 
 ## Application Selection Matrix
 
 | Workload Type | Application | Justification |
 |---------------|------------|---------------|
-| CPU-intensive | stress-ng | Used to generate controlled CPU load and analyse processor utilisation, scheduling behaviour, and system stability under stress. |
-| Memory-intensive | stress-ng (vm test) | Allocates and stresses memory to observe RAM usage, swapping behaviour, and memory pressure handling. |
-| Disk I/O-intensive | fio | Industry-standard benchmarking tool for measuring disk read/write throughput, latency, and I/O performance. |
-| Network-intensive | iperf3 | Measures network bandwidth and latency, suitable for client-server testing over SSH. |
-| Server application | nginx | Lightweight web server used to evaluate service response time, process handling, and concurrent connections. |
+| CPU-intensive | stress-ng | Generates controlled CPU load to analyse processor utilisation, scheduling behaviour, and system stability under stress conditions. |
+| Memory-intensive | stress-ng (vm test) | Allocates and stresses virtual memory to evaluate RAM usage, swapping behaviour, and memory pressure handling. |
+| Disk I/O-intensive | fio | Industry-standard benchmarking tool used to measure disk read/write throughput, latency, and I/O performance. |
+| Network-intensive | iperf3 | Measures network bandwidth and latency between systems, suitable for client-server testing over SSH. |
+| Server application | nginx | Lightweight web server used to analyse service response time, process management, and concurrent connection handling. |
 
+---
 
 ## Installation Documentation (SSH-based)
 
-All applications were installed on the Ubuntu Server using secure SSH access from the Windows workstation.
+All selected applications were installed on the Ubuntu Server using secure SSH access from the Windows workstation. Installation was performed using the Advanced Package Tool (APT) to ensure consistency and reproducibility.
 
+---
 
-## Update system packages
+## Update System Packages and Install Applications
 
 ```bash
 sudo apt update
 sudo apt install stress-ng -y
 sudo apt install fio -y
-sudo apt install iperf3 -y
-sudo apt install nginx -y
-Expected Resource Usage Profiles
-CPU-intensive workload
 
-High CPU utilisation across all available cores
-
-Increased context switching and scheduler activity
-
-Possible thermal throttling under sustained load
-
-Memory-intensive workload
-
-Rapid allocation and deallocation of memory
-
-Increased swap usage if physical RAM limits are exceeded
-
-Evaluates memory management efficiency
-
-Disk I/O-intensive workload
-
-High read/write operations
-
-Increased I/O wait times
-
-Identifies storage bottlenecks
-
-Network-intensive workload
-
-High bandwidth utilisation
-
-Observable latency under load
-
-Tests network stack limits
-
-Server application workload
-
-Moderate CPU and memory usage
-
-Multiple worker processes
-
-Simulates real-world server behaviour
-
-
-## Monitoring Strategy
-
-The following command-line tools will be used in later weeks to monitor system performance:
-
-- `top` / `htop` – CPU and memory utilisation
-- `free -h` – Memory usage statistics
-- `vmstat` – System activity and swapping
-- `iostat` – Disk I/O performance
-- `ss` and `ip` – Network connections and statistics
-- `systemctl status` – Service health monitoring
-
-These tools provide quantitative metrics that support detailed analysis and performance optimisation.
-
-
-## Weekly Reflection
-
-This week improved my understanding of how different applications stress different operating system resources. Selecting appropriate workloads ensures that performance testing is meaningful rather than generic. Planning expected behaviour in advance also supports accurate interpretation of performance data and informed optimisation decisions in later stages of the coursework.
