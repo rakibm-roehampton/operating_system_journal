@@ -6,6 +6,7 @@
 
 ---
 
+
 ## Introduction
 
 This week focuses on selecting appropriate applications to evaluate operating system performance under different workload types. Each application is chosen to stress a specific system resource, allowing meaningful performance analysis and comparison in later weeks.
