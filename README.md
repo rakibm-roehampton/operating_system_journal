@@ -1,5 +1,7 @@
-# CMPN202 – Operating Systems Coursework Journal
+# CMPN202 – Operating Systems Coursework
 
-## Weekly Journal
-- [Week 1 – System Planning and Distribution Selection](week1.html)
-- [Week 2 – Security Planning and Testing Methodology](week2.html)
+**Student:** Mehedi Hasan Rakib  
+**Student ID:** A00022820  
+
+📘 Live journal:
+https://rakibm-roehampton.github.io/operating_system_journal/
