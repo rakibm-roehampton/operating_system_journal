@@ -57,6 +57,7 @@ ab -n 100 -c 10 http://192.168.56.102/
 | Network throughput       | ~940 Mbit/s |
 | Web server response time | ~120 ms     |
 
+
 ## Bottleneck Analysis
 
 The baseline results indicated:
