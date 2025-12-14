@@ -6,3 +6,4 @@
 - [Week 3 – Application Selection for Performance Testing](week3.html)
 - [Week 4 – Initial System Configuration & Security Implementation](week4.html)
 - [Week 5 – Advanced Security and Monitoring Infrastructure](week5.html)
+- [Week 6 – Performance Evaluation and Analysis](week6.html)
