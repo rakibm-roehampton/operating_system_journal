@@ -34,8 +34,6 @@ sudo apt install iperf3 -y
 sudo apt install nginx -y
 
 
----
-
 ## Expected Resource Usage Profiles
 
 ### CPU-intensive workload
@@ -63,7 +61,6 @@ sudo apt install nginx -y
 - Multiple worker processes
 - Realistic simulation of production server behaviour
 
----
 
 ## Monitoring Strategy
 
@@ -78,7 +75,6 @@ The following command-line tools will be used in later weeks to monitor system p
 
 These tools provide quantitative metrics that support detailed analysis and performance optimisation.
 
----
 
 ## Weekly Reflection
 
