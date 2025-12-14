@@ -25,6 +25,7 @@ This week focuses on selecting representative applications to evaluate operating
 
 All applications were installed on the Ubuntu Server using secure SSH access from the Windows workstation.
 
+
 ## Update system packages
 
 ```bash
@@ -33,62 +34,46 @@ sudo apt install stress-ng -y
 sudo apt install fio -y
 sudo apt install iperf3 -y
 sudo apt install nginx -y
+Expected Resource Usage Profiles
+CPU-intensive workload
 
+High CPU utilisation across all available cores
 
+Increased context switching and scheduler activity
 
-## Expected Resource Usage Profiles
+Possible thermal throttling under sustained load
 
-### CPU-intensive workload
-- High CPU utilisation across all available cores
-- Increased context switching and scheduler activity
-- Possible thermal throttling under sustained load conditions
+Memory-intensive workload
 
-### Memory-intensive workload
-- Rapid allocation and deallocation of memory pages
-- Increased swap usage if physical RAM limits are exceeded
-- Useful for evaluating memory management and paging efficiency
+Rapid allocation and deallocation of memory
 
-### Disk I/O-intensive workload
-- High volume of read and write operations
-- Increased I/O wait times during peak activity
-- Helps identify disk throughput limits and storage bottlenecks
+Increased swap usage if physical RAM limits are exceeded
 
-### Network-intensive workload
-- High packet transmission rates and bandwidth usage
-- Observable latency under heavy traffic conditions
-- Useful for analysing network stack performance and throughput limits
+Evaluates memory management efficiency
 
-### Server application workload
-- Moderate CPU and memory consumption under normal load
-- Multiple worker processes handling concurrent connections
-- Simulates realistic production-style server behaviour
+Disk I/O-intensive workload
 
+High read/write operations
 
+Increased I/O wait times
 
-### CPU-intensive workload
-- High CPU utilisation across available cores
-- Increased process scheduling activity
-- Potential thermal throttling under sustained load
+Identifies storage bottlenecks
 
-### Memory-intensive workload
-- Rapid memory allocation
-- Increased swap usage if RAM limits are exceeded
-- Useful for evaluating memory management efficiency
+Network-intensive workload
 
-### Disk I/O-intensive workload
-- High read/write operations
-- Increased I/O wait times
-- Useful for identifying storage bottlenecks
+High bandwidth utilisation
 
-### Network-intensive workload
-- High throughput and packet transmission rates
-- Observable latency under load
-- Useful for analysing network limits
+Observable latency under load
 
-### Server application workload
-- Moderate CPU and memory usage
-- Multiple worker processes
-- Realistic simulation of production server behaviour
+Tests network stack limits
+
+Server application workload
+
+Moderate CPU and memory usage
+
+Multiple worker processes
+
+Simulates real-world server behaviour
 
 
 ## Monitoring Strategy
