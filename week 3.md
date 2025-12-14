@@ -37,6 +37,33 @@ sudo apt install nginx -y
 ## Expected Resource Usage Profiles
 
 ### CPU-intensive workload
+- High CPU utilisation across all available cores
+- Increased context switching and scheduler activity
+- Possible thermal throttling under sustained load conditions
+
+### Memory-intensive workload
+- Rapid allocation and deallocation of memory pages
+- Increased swap usage if physical RAM limits are exceeded
+- Useful for evaluating memory management and paging efficiency
+
+### Disk I/O-intensive workload
+- High volume of read and write operations
+- Increased I/O wait times during peak activity
+- Helps identify disk throughput limits and storage bottlenecks
+
+### Network-intensive workload
+- High packet transmission rates and bandwidth usage
+- Observable latency under heavy traffic conditions
+- Useful for analysing network stack performance and throughput limits
+
+### Server application workload
+- Moderate CPU and memory consumption under normal load
+- Multiple worker processes handling concurrent connections
+- Simulates realistic production-style server behaviour
+
+
+
+### CPU-intensive workload
 - High CPU utilisation across available cores
 - Increased process scheduling activity
 - Potential thermal throttling under sustained load
