@@ -92,20 +92,22 @@ sudo systemctl restart nginx
 
 The same tests were re-run after optimisation to ensure consistency.
 
-## Performance Data Summary (After Optimisation)
-Metric	Result
-Average CPU usage	~65%
-Memory usage	~480 MB
-Disk throughput	~130 MB/s
-Network throughput	~940 Mbit/s
-Web server response time	~85 ms
+| Metric                   | Result      |
+| ------------------------ | ----------- |
+| Average CPU usage        | ~65%        |
+| Memory usage             | ~480 MB     |
+| Disk throughput          | ~130 MB/s   |
+| Network throughput       | ~940 Mbit/s |
+| Web server response time | ~85 ms      |
 
-## Performance Comparison
-Metric	Before	After
-CPU usage	75%	65%
-Memory usage	520 MB	480 MB
-Disk throughput	110 MB/s	130 MB/s
-Response time	120 ms	85 ms
+
+| Metric          | Before   | After    |
+| --------------- | -------- | -------- |
+| CPU usage       | 75%      | 65%      |
+| Memory usage    | 520 MB   | 480 MB   |
+| Disk throughput | 110 MB/s | 130 MB/s |
+| Response time   | 120 ms   | 85 ms    |
+
 
 ## Critical Analysis
 
