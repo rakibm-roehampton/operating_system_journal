@@ -60,7 +60,7 @@ This configuration limits access to the server and reduces the overall attack su
 
 ---
 
-## CLI System Specification Evidence
+### CLI System Specification Evidence
 
 Baseline system information was collected using standard Linux command-line tools to document the server configuration:
 
