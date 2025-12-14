@@ -129,6 +129,3 @@ This script enables automated, repeatable monitoring without requiring direct se
 
 This week demonstrated the importance of layered security in operating system design. Implementing AppArmor, automated security updates, and fail2ban significantly improved the server’s resilience against attacks. Developing verification and monitoring scripts strengthened my understanding of automation and reinforced industry-standard system administration practices.
 
-
-AppArmor reduces the impact of compromised applications by enforcing least-privilege execution policies.
-
