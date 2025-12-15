@@ -95,7 +95,6 @@ sudo aa-status
 ## Firewall status
 sudo ufw status verbose
 
-
 Both controls were active and enforcing the intended security policies.
 
 ## Remaining Risk Assessment
