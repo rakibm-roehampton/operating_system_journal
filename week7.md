@@ -41,13 +41,12 @@ A controlled network scan was performed within the isolated VirtualBox network t
 nmap -sS 192.168.56.102
 
 ## Scan Results
-| Port       | Service | Status | Justification                             |
-| ---------- | ------- | ------ | ----------------------------------------- |
-| 22         | SSH     | Open   | Required for secure remote administration |
-| 80         | HTTP    | Open   | Required for Nginx web server testing     |
-| All others | –       | Closed | Reduced attack surface                    |
-| Port       | Service | Status | Justification                             |
-| ---------- | ------- | ------ | ----------------------------------------- |
+
+| Port | Service | Status | Justification |
+|------|---------|--------|---------------|
+| 22   | SSH     | Open   | Required for secure remote administration |
+| 80   | HTTP    | Open   | Required for Nginx web server testing |
+| All others | - | Closed | Reduced attack surface |
 
 The scan confirmed that only essential services were exposed.
 
