@@ -75,15 +75,19 @@ All running services were reviewed to ensure they were necessary and securely co
 systemctl list-units --type=service --state=running
 
 ## Service Inventory
-| Service             | Purpose                  | Justification                        |
-| ------------------- | ------------------------ | ------------------------------------ |
-| ssh                 | Remote administration    | Essential for server management      |
-| nginx               | Web server               | Required for performance testing     |
-| fail2ban            | Intrusion prevention     | Protects against brute-force attacks |
-| unattended-upgrades | Automatic updates        | Ensures timely security patches      |
-| apparmor            | Mandatory access control | Enforces application-level security  |
 
-Unnecessary services were not enabled, reducing system complexity and attack surface.
+The following table lists all active and relevant services identified on the Ubuntu Server VM during the security audit. Each service is evaluated based on necessity, exposure, and security justification.
+
+| Service Name | Port | Protocol | Status | Purpose | Security Justification |
+|-------------|------|----------|--------|---------|------------------------|
+| ssh | 22 | TCP | Enabled | Remote system administration | Essential for secure server management using key-based authentication |
+| nginx | 80 | TCP | Enabled | Web server testing | Required for performance and service availability testing |
+| systemd-resolved | - | - | Enabled | DNS resolution | Core system service required for networking |
+| cron | - | - | Enabled | Scheduled tasks | Required for system maintenance jobs |
+| ufw | - | - | Enabled | Firewall management | Enforces inbound and outbound access control |
+| fail2ban | - | - | Enabled | Intrusion prevention | Protects against brute-force SSH attacks |
+
+All non-essential services were disabled or not installed to minimise the system’s attack surface.
 
 ## Access Control Verification
 
